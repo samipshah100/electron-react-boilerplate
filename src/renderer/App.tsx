@@ -39,11 +39,15 @@ const Hello = () => {
   );
 };
 
+const Main = () => {
+  return <h1>Hello world</h1>;
+};
+
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hello />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </Router>
   );
