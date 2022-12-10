@@ -1,6 +1,8 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
 import './App.css';
+import Home from './components/Home';
+import 'tailwindcss/tailwind.css';
 
 const Hello = () => {
   return (
@@ -39,15 +41,11 @@ const Hello = () => {
   );
 };
 
-const Main = () => {
-  return <h1>Hello world</h1>;
-};
-
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );
